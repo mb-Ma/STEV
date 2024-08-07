@@ -4,7 +4,7 @@ https://github.com/mb-Ma/STEV/issues<p align="center">
 Forecasting via Flat Scheme and Spatial-temporal Focal Learning</h2>
 </p>
 
-# :house:
+# :house: STEV
 
 ## TLDR
 
