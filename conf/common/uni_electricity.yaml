@@ -1,0 +1,34 @@
+name: uni_electricity
+# data_path: data/processed/elc-928_165-7_321-0-12_12.npz
+data_path: data/processed/elc-928_261-5_321-2_321-12_12_c.npz
+
+dataset_name: uni_electricity 
+batch_size: 2048
+log_path: main.log 
+seed: 47
+device: cuda
+scaler: standard
+is_first_period_only: True
+is_col: True
+is_norm_metric: True
+
+model_name: mlp
+input_size: 12
+output_size: 12
+hidden_size: 64
+num_layers: 2
+dropout: 0.2
+
+skip_epoch: 1
+optimizer: adam
+lr: 0.001
+weight_decay: 0.0
+epochs: 100
+
+early_stoping: True
+patience: 10
+
+first_feats: 261 
+
+augementation_rate: 0
+augement_all: False

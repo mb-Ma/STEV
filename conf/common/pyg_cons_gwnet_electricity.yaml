@@ -1,0 +1,43 @@
+name: pyg_electricity # same with dataloader file name
+data_path: data/processed/elc-925_261-7_321-3_321-12_12_C.npz
+
+dataset_name: pyg_electricity
+batch_size: 8
+log_path: main.log
+seed: 47
+device: cuda
+scaler: standard
+
+is_norm_metric: True
+is_norm_loss: True
+is_col: True
+use_norm: False
+is_pregraph: False
+is_cons_loss: True
+weight: 0.3
+temperature: 0.1
+cl_loss_weight: 1.0
+augment_data: False
+is_over_sampling: False
+dynamic: True
+
+model_name: dyngraphwave
+max_nodes: 321
+first_feats: 261
+node_embed: 20
+input_size: 1
+output_size: 1
+hidden_size: 64
+horizon: 12
+num_layers: 2
+dropout: 0.2
+
+skip_epoch: 1
+optimizer: adam
+lr: 0.001
+weight_decay: 0.0
+epochs: 100
+
+early_stoping: True
+patience: 10
+augementation_rate: 0
