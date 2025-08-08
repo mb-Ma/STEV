@@ -7,16 +7,19 @@ Forecasting via Flat Scheme and Spatial-temporal Focal Learning</h2>
 # :house: STEV
 
 ## TL; DR
-We introduce an emerging task, **EVTSF**, addressing a frequently overlooked aspect of CPSs, that is evolving with sensing expansion. In response, we present **STEV**, a pioneering framework designed to tackle the unique challenges of EVTSF.
+We introduce EVTSF, an emerging task that targets a frequently overlooked aspect of CPSs — their evolution through sensing expansion. To address this challenge, we propose STEV, a pioneering framework tailored to the unique demands of EVTSF.
 
-## Data
-This work sources from three public datasets: [EElectricity](https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014),[EPeMS](https://www.kaggle.com/datasets/liuxu77/largest), and [EWeather](https://drive.google.com/drive/folders/1sPCg8nMuDa0bAWsHPwskKkPOzaVcBneD). 
+## Data Preparation
+We sourced from three public multivariate time series datasets: [Electricity](https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014),[PeMS](https://www.kaggle.com/datasets/liuxu77/largest), and [Weather](https://drive.google.com/drive/folders/1sPCg8nMuDa0bAWsHPwskKkPOzaVcBneD). You need to download these datasets first, then run the data_process scripts to obtain the **expanding-variate time series datasets**.
 
-you can find these datasets from the published work through the provided URL.
-Notably, for the EPeMS dataset, you have to run two processing scripts. The first is to get the filter sensors and time ranges, 
-then you can obtain the data for training, validating, and testing.
+```
+# Generating EElectricity
 
-The Expanding-variant Time Series datasets are processed by the scripts (you can find them in the folder "./data/scripts/").
+# Generating EPeMS
+
+# Generating EWeather
+
+```
 
 ## HOW TO RUN STEV
 
