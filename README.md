@@ -7,13 +7,12 @@ Forecasting via Flat Scheme and Spatial-temporal Focal Learning</h2>
 # :house: STEV
 
 ## TL; DR
-We introduce an emerging task, **EVTSF**, addressing a frequently overlooked aspect of CPS, that is evolving with sensing expansion.
-In response, we present **STEV**, a pioneering framework
-designed to tackle the unique challenges of EVTSF.
+We introduce an emerging task, **EVTSF**, addressing a frequently overlooked aspect of CPSs, that is evolving with sensing expansion. In response, we present **STEV**, a pioneering framework designed to tackle the unique challenges of EVTSF.
 
 ## Data
-This work contains three public datasets: [EElectricity](https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014),[EPeMS](https://www.kaggle.com/datasets/liuxu77/largest), and [EWeather](https://drive.google.com/drive/folders/1sPCg8nMuDa0bAWsHPwskKkPOzaVcBneD). 
-To avoid leaking our information, you can find these datasets from the published work through the provided URL.
+This work sources from three public datasets: [EElectricity](https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014),[EPeMS](https://www.kaggle.com/datasets/liuxu77/largest), and [EWeather](https://drive.google.com/drive/folders/1sPCg8nMuDa0bAWsHPwskKkPOzaVcBneD). 
+
+you can find these datasets from the published work through the provided URL.
 Notably, for the EPeMS dataset, you have to run two processing scripts. The first is to get the filter sensors and time ranges, 
 then you can obtain the data for training, validating, and testing.
 
