@@ -9,39 +9,37 @@ Forecasting via Flat Scheme and Spatial-temporal Focal Learning</h2>
 ## TL; DR
 We introduce EVTSF, an emerging task that targets a frequently overlooked aspect of CPSs — their evolution through sensing expansion. To address this challenge, we propose STEV, a pioneering framework tailored to the unique demands of EVTSF.
 
-## Data Preparation
-We sourced from three public multivariate time series datasets: [Electricity](https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014),[PeMS](https://www.kaggle.com/datasets/liuxu77/largest), and [Weather](https://drive.google.com/drive/folders/1sPCg8nMuDa0bAWsHPwskKkPOzaVcBneD). You need to download these datasets first, then run the data_process scripts to obtain the **expanding-variate time series datasets**.
-
-```
-# Generating EElectricity
-
-# Generating EPeMS
-
-# Generating EWeather
-
-```
-
-## HOW TO RUN STEV
-
-### Prerequisites
+## Python library
 ```
 pip install -r requirements.txt
 ```
-### Prepare datasets
+
+## Data Preparation
+We sourced from three public multivariate time series datasets: [Electricity](https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014),[PeMS](https://www.kaggle.com/datasets/liuxu77/largest), and [Weather](https://drive.google.com/drive/folders/1sPCg8nMuDa0bAWsHPwskKkPOzaVcBneD). You need to download these datasets first, then run the data_process scripts to obtain the **expanding-variate time series datasets**.
+
+We also uploaded the processed dataset to [Baidu Driver](https://pan.baidu.com/s/1isPCg5rm53vz5xbXIAr3nw) with the password "9432". 
+
+You can also generate the datasets using the scripts.
 ```
-cd ./data/process
+# cd data/script
 
-# EElectricity
-python ./process_elc.py
+# Generating EElectricity
+python process_elc.py
+python process_elc_oracle.py
 
-# EPeMS
-run ./process_largest_data.ipynb
-python ./process_pems.py
+# Generating EPeMS
+python process_pems.py
+python process_pems_spatial.py
+python process_pems_random.py
 
-# EWeather
-python ./raw_weather.py
+# Generating EWeather
 python process_weather.py
+python process_weather_oracle.py
 ```
+---
+Todo...
+
+For the EPeMS data, we also provide 
 
 ### Run STEV
 ### Training & Validating & Infering
