@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ## Data Preparation
 We sourced from three public multivariate time series datasets: [Electricity](https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014),[PeMS](https://www.kaggle.com/datasets/liuxu77/largest), and [Weather](https://drive.google.com/drive/folders/1sPCg8nMuDa0bAWsHPwskKkPOzaVcBneD). You need to download these datasets first, then run the data_process scripts to obtain the **expanding-variate time series datasets**.
 
-We also uploaded the processed dataset to [Baidu Driver](https://pan.baidu.com/s/1isPCg5rm53vz5xbXIAr3nw) with the password "9432". 
+For convenience, we also uploaded the processed dataset to [Baidu Driver](https://pan.baidu.com/s/1isPCg5rm53vz5xbXIAr3nw) with the password "9432". 
 
 You can also generate the datasets using the scripts.
 ```
