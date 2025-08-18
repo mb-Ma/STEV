@@ -1,0 +1,50 @@
+name: pyg_elc
+# data_path: data/processed/elc-928_165-7_321-0-12_12.npz
+data_path: data/processed/elc-925_261-7_321-3_321-12_12_C.npz
+
+dataset_name: pyg_electricity 
+batch_size: 48
+log_path: main.log 
+seed: 47
+device: cuda
+scaler: standard
+is_first_period_only: False
+
+is_col: True
+is_norm_metric: True
+is_pregraph: False
+is_gpt: True
+use_norm: True
+is_cons_loss: False
+is_norm_loss: True
+augment_data: False
+
+model_name: GPT4TS
+cl_loss_weight: 1.0
+freeze: True
+input_size: 12
+itr: 3
+patch_size: 4
+pretrain: True
+output_size: 12
+is_over_sampling: False
+stride: 8
+gpt_layers: 6
+d_model: 768
+hidden_size: 128
+num_layers: 3
+dropout: 0.2
+
+skip_epoch: 1
+optimizer: adam
+lr: 0.001
+weight_decay: 0.0
+epochs: 100
+
+early_stoping: True
+patience: 10
+
+first_feats: 261 
+
+augementation_rate: 0
+augement_all: False

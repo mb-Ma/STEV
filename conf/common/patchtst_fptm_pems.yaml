@@ -1,0 +1,98 @@
+name: mask_patchtst_pems # same with dataloader file name
+data_path: data/processed/pems-63_296-3_447-2-12_12_C.npz
+
+dataset_name: mask_pems 
+batch_size: 64
+seed: 47
+device: cuda
+scaler: standard
+incre_num: 2
+is_last: False
+is_default_graph: False
+is_norm_loss: False
+is_norm_metric: False
+is_mask_loss: True
+is_cons_loss: False
+is_oracle: False
+is_col: True
+use_norm: False
+
+model_name: PatchTST
+model_cfg:
+  fc_dropout: 0.05
+  head_dropout: 0.0
+  # patch_len: 16
+  patch_len: 4
+  stride: 2
+  padding_patch: end
+  revin: 1
+  affine: 0
+  subtract_last: 0
+  decomposition: 0
+  kernel_size: 25
+  individual: 0
+  embed_type: 0
+  # enc_in: 7
+  # dec_in: 7
+  # c_out: 7
+  d_model: 512
+  n_heads: 8
+  e_layers: 2
+  d_layers: 1
+  d_ff: 2048
+  moving_avg: 25
+  factor: 1
+  distil: true
+  dropout: 0.05
+  embed: timeF
+  activation: gelu
+  output_attention: false
+  do_predict: false
+  num_nodes: 447
+  first_num_nodes: 296
+  input_dim: 1
+  output_dim: 1
+  lag: 12
+  horizon: 12
+  label_len: 6
+num_nodes: 447
+first_num_nodes: 296
+input_dim: 1
+output_dim: 1
+lag: 12
+horizon: 12
+label_len: 6
+output_attention: False
+
+
+e_layers: 4
+d_model: 512
+d_ff: 512
+freq: 5t
+embed: timeF
+dropout: 0.1
+factor: 1
+n_heads: 8
+activation: gelu
+
+
+skip_epoch: 1
+optimizer: adam
+loss_func: mae
+lr_decay: True
+lr_decay_rate: 0.3
+lr_decay_step: [5,20,40,70]
+lr: 0.001
+weight_decay: 0.0
+epochs: 100
+
+early_stoping: True
+patience: 10
+teacher_forcing: False
+grad_norm: False
+
+log_path: main.log
+log_step: 20
+
+mae_thresh: None
+mape_thresh: None
