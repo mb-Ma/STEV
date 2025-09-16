@@ -45,13 +45,13 @@ For the EPeMS data, we also provide
 ### Training & Validating & Infering
 ```
 # EElectricity
-python main.py common=pyg_cons_gwnet_electricity
+python main.py common=stev_electricity
 
 # EPeMS
-python main.py common=pyg_cons_gwnet_pems
+python main.py common=stev_pems
 
 # EWeather
-python main.py common=pyg_cons_gwnet_weather
+python main.py common=stev_weather
 
 ```
 
