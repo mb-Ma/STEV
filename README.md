@@ -36,11 +36,8 @@ python process_pems_random.py
 python process_weather.py
 python process_weather_oracle.py
 ```
+
 ---
-Todo...
-
-For the EPeMS data, we also provide 
-
 ### Run STEV
 ### Training & Validating & Infering
 ```
